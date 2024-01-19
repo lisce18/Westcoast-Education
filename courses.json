@@ -1,36 +1,40 @@
 {
   "courses": [
     {
-      "courseId": 1,
-      "courseName": "Pyhton",
-      "courseLength": 30,
-      "located": ["online", "at school"],
+      "id": 1,
+      "courseName": "Python",
+      "number": 2553,
+      "duration": 30,
+      "location": ["Online", "På plats"],
       "imageUrl": "python.jpg",
-      "date": "28/2-24"
+      "startDate": "28/2-24"
     },
     {
-      "courseId": 2,
+      "id": 2,
       "courseName": "JavaScript",
-      "courseLength": 45,
-      "located": ["online", "at school"],
+      "number": 7290,
+      "duration": 45,
+      "location": ["Online", "På plats"],
       "imageUrl": "javascript.jpg",
-      "date": "28/2-24"
+      "startDate": "28/2-24"
     },
     {
-      "courseId": 3,
+      "id": 3,
       "courseName": "React",
-      "courseLength": 60,
-      "located": ["online", "at school"],
+      "number": 2716,
+      "duration": 60,
+      "location": ["Online", "På plats"],
       "imageUrl": "react.jpg",
-      "date": "28/2-24"
+      "startDate": "28/2-24"
     },
     {
-      "courseId": 4,
+      "id": 4,
       "courseName": "NodeJs",
-      "courseLength": 38,
-      "located": ["online", "at school"],
+      "number": 3571,
+      "duration": 38,
+      "location": ["Online", "På plats"],
       "imageUrl": "nodejs.jpg",
-      "date": "28/2-24"
+      "startDate": "28/2-24"
     }
   ]
 }
