@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,29 +8,75 @@
     />
     <title>Westcoast Education</title>
     <script
-      src="./Scripts/course.js"
+      src="./data/courses.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./Scripts/log-in.js"
       defer
     ></script>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">Westcoast Education</div>
-        <nav>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="/index.html">Westcoast Education</a>
+        </div>
+        <nav class="menu">
           <ul>
-            <li>
-              <button id="viewAllCourses"><a href="/">Kurser</a></button>
-              <button id="aboutUs"><a href="/">About Us</a></button>
-              <button id="logIn"><a href="/">Log In</a></button>
+            <li id="viewAllCourses">
+              <a href="/Pages/gallery.html">Kurser</a>
+            </li>
+            <li id="aboutUs">
+              <a href="/Pages/about-us.html">Om Oss</a>
+            </li>
+            <li id="contact">
+              <a href="/Pages/contact-us.html">Kontakta Oss</a>
+            </li>
+            <li id="logIn">
+              <a href="/Pages/log-in.html">Logga In</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div id="courses"></div>
-      </section>
-    </main>
+      </header>
+      <main>
+        <article class="landing-page">
+          <section class="container">
+            <div id="welcomeCustomer"></div>
+            <h2>Välkommen till Westcoast Education!</h2>
+            <p>Information om oss.....</p>
+            <a
+              href="/Pages/about-us.html"
+              class="btn"
+              >Läs mer om oss</a
+            >
+          </section>
+        </article>
+        <article class="popular-courses">
+          <section class="container">
+            <h3>Våra populäraste kurser</h3>
+            <section class="display-pupular-courses"></section>
+            <a
+              href="/Pages/gallery.html"
+              class="btn"
+              >Se alla kurser här</a
+            >
+          </section>
+        </article>
+        <article class="contact">
+          <section class="container">
+            <h3>Kontakta oss</h3>
+            <section class=""></section>
+            <a
+              href="/Pages/contact.html"
+              class="btn"
+              >Kontakta oss här!</a
+            >
+          </section>
+        </article>
+      </main>
+    </div>
   </body>
 </html>

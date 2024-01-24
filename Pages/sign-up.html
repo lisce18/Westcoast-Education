@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      src="../Scripts/costumer.js"
+      type="module"
+      defer
+    ></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="page-title">Registrera dig</h1>
+      <form id="signUpForm">
+        <label for="firstName">Förnamn:</label>
+        <div class="form-control">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Ange förnamn..."
+          />
+        </div>
+        <label for="lastName">Efternamn:</label>
+        <div class="form-control">
+          <input
+            type="text"
+            name="lastName"
+            id="ladtName"
+            placeholder="Ange efternamn..."
+          />
+        </div>
+        <label for="billingAddress">Fakureringsadress:</label>
+        <div class="form-control">
+          <input
+            type="text"
+            name="billingAddress"
+            id="billingAddress"
+            placeholder="Ange fakureringsadress..."
+          />
+        </div>
+        <label for="userEmail">E-mail:</label>
+        <div class="form-control">
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Ange E-mail..."
+          />
+        </div>
+        <label for="phoneNr">Telefon nummer:</label>
+        <div class="form-control">
+          <input
+            type="text"
+            name="phoneNr"
+            id="phoneNr"
+            placeholder="Ange telefon nummer..."
+          />
+        </div>
+        <label for="password">Lösenord:</label>
+        <div class="form-control">
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Ange nytt lösenord..."
+          />
+        </div>
+        <div class="form-control">
+          <button
+            id="addNewCostumer"
+            type="submit"
+            class="btn"
+          >
+            Spara
+          </button>
+          <btn
+            href="./log-in.html"
+            type="submit"
+            class="btn"
+          >
+          </btn>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
