@@ -1,78 +1,86 @@
 {
   "courses": [
     {
-      "id": "1",
+      "id": 1,
       "courseName": "Python",
       "number": 2553,
       "duration": 30,
       "location": "Online",
       "imageUrl": "python.jpg",
-      "startDate": "28/2-24"
+      "startDate": "28/2-24",
+      "costumers": ["Johannes", "Anders"]
     },
     {
-      "id": "2",
+      "id": 2,
       "courseName": "JavaScript",
       "number": 7290,
       "duration": 45,
       "location": "Online/På plats",
       "imageUrl": "javascript.jpg",
-      "startDate": "28/2-24"
+      "startDate": "28/2-24",
+      "costumers": ["Johan", "Anders"]
     },
     {
-      "id": "3",
+      "id": 3,
       "courseName": "React",
       "number": 2716,
       "duration": 60,
       "location": "På plats",
       "imageUrl": "react.jpg",
-      "startDate": "28/2-24"
+      "startDate": "28/2-24",
+      "costumers": ["Johan", "Johannes"]
     },
     {
-      "id": "4",
+      "id": 4,
       "courseName": "NodeJs",
       "number": 3571,
       "duration": 38,
       "location": "Online",
       "imageUrl": "nodejs.jpg",
-      "startDate": "28/2-24"
+      "startDate": "28/2-24",
+      "costumers": []
     }
   ],
   "costumers": [
     {
-      "id": "366",
+      "id": 1,
       "firstName": "Johan",
       "lastName": "Andersson",
       "billingAddress": "Anderssonsgata 30",
-      "costumerEmail": "johan.andersson@hotmail.com",
+      "email": "johan.andersson@hotmail.com",
       "phoneNr": "0702311221",
-      "password": "hej"
+      "password": "hej",
+      "courses": ["React", "JavaScript"]
     },
     {
-      "id": "367",
+      "id": 2,
       "firstName": "Johannes",
       "lastName": "Andreasson",
       "billingAddress": "Andreassonsgata 31",
-      "costumerEmail": "johannes.andreasson@hotmail.com",
+      "email": "johannes.andreasson@hotmail.com",
       "phoneNr": "0702312112",
-      "password": "hej"
+      "password": "hej",
+      "courses": ["Pyhton", "React"]
     },
     {
-      "id": "368",
+      "id": 3,
       "firstName": "Anders",
       "lastName": "Johansson",
       "billingAddress": "Johanssonsgata 32",
-      "costumerEmail": "anders.johansson@hotmail.com",
+      "email": "anders.johansson@hotmail.com",
       "phoneNr": "0703212112",
-      "password": "hej"
+      "password": "hej",
+      "courses": ["JavaScript", "Python"]
     },
     {
-      "id": "369",
+      "id": 4,
       "firstName": "Wilhelm",
       "lastName": "Lövgren Olofsson",
       "billingAddress": "Jungfrugatan 30",
-      "costumerEmail": "willelovgrenolofsson@gmail.com",
+      "email": "willelovgrenolofsson@gmail.com",
       "phoneNr": "0707818722",
-      "password": "hej"
+      "password": "hej",
+      "courses": []
     }
   ]
 }

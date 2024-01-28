@@ -7,52 +7,69 @@
       content="width=device-width, initial-scale=1.0"
     />
     <script
-      src="log-in.js"
       type="module"
+      src="/Scripts/app.js"
       defer
     ></script>
-    <title>Sign In</title>
+    <title>Log in</title>
   </head>
   <body>
-    <main>
-      <h1 class="page-title">Logga in</h1>
-      <form id="signIn">
-        <div class="form-control">
-          <label for="costumerEmail">E-mail:</label>
-          <input
-            type="email"
-            name="costumerEmail"
-            id="costumerEmail"
-            placeholder="Ange E-mail..."
-          />
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="/index.html">Westcoast Education</a>
         </div>
-        <div class="form-control">
-          <label for="password">Lösenord:</label>
-          <input
-            type="text"
-            name="password"
-            id="password"
-            placeholder="Ange lösenord..."
-          />
-        </div>
+        <nav>
+          <ul id="menu">
+            <!-- Meny -->
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="page-title">Logga in</h1>
         <a
           href="../index.html"
-          id="signInBtn"
-          type="submit"
+          id="backBtn"
           class="btn"
-          >Logga in</a
+          >Tillbaka</a
         >
-      </form>
-      <a
-        href="./gallery.html"
-        class="btn"
-        >Tillbaka</a
-      >
-      <a
-        href="./sign-up.html"
-        class="btn"
-        >Registrera dig</a
-      >
-    </main>
+        <form id="signIn">
+          <div class="form-control">
+            <label for="costumerEmail">E-mail:</label>
+            <input
+              type="email"
+              name="costumerEmail"
+              id="costumerEmail"
+              placeholder="Ange E-mail..."
+            />
+          </div>
+          <div class="form-control">
+            <label for="password">Lösenord:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Ange lösenord..."
+            />
+          </div>
+          <div class="form-control">
+            <button
+              type="submit"
+              class="btn"
+            >
+              Logga in
+            </button>
+          </div>
+        </form>
+        <a
+          href="./sign-up.html"
+          id="signUpBtn"
+          class="btn"
+          >Registrera ny användare</a
+        >
+      </main>
+      <!-- Footer -->
+      <footer id="footer"></footer>
+    </div>
   </body>
 </html>

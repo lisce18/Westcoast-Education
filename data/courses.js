@@ -1,4 +1,4 @@
-const vehicles = [
+const courses = [
   {
     courseId: 1,
     imageUrl: 'python.jpg',
@@ -40,35 +40,45 @@ const vehicles = [
     date: '28/2-24',
   },
 ];
-
-const listAllCourses = () => courses;
-
-// async function listCourses() {
-//   const courses = await fetchCourses();
-//   courses.forEach((course) => {
-//     courseList.innerHTML += `<div>
-//     <img src="/Assets/images/${course.courseName}.jpg">
-//     <span>Kursnamn: ${course.courseName} </span>
-//     <span>Kursens längd: ${course.duration} dagar </span>
-//     <span>Hålls: ${course.location} </span>
-//     </div>`;
-//   });
-//   return courses;
-// }
-
-// async function fetchCourses() {
-//   try {
-//     const response = await fetch('http://localhost:3000/courses');
-
-//     if (response.ok) {
-//       const result = await response.json();
-//       return result;
-//     } else {
-//       console.log(response.status);
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-export { listAllCourses };
+const costumers = [
+  {
+    id: 1,
+    firstName: 'Johan',
+    lastName: 'Andersson',
+    billingAddress: 'Anderssonsgata 30',
+    email: 'johan.andersson@hotmail.com',
+    phoneNr: '0702311221',
+    password: 'hej',
+    courses: ['React', 'JavaScript'],
+  },
+  {
+    id: 2,
+    firstName: 'Johannes',
+    lastName: 'Andreasson',
+    billingAddress: 'Andreassonsgata 31',
+    email: 'johannes.andreasson@hotmail.com',
+    phoneNr: '0702312112',
+    password: 'hej',
+    courses: ['Pyhton', 'React'],
+  },
+  {
+    id: 3,
+    firstName: 'Anders',
+    lastName: 'Johansson',
+    billingAddress: 'Johanssonsgata 32',
+    email: 'anders.johansson@hotmail.com',
+    phoneNr: '0703212112',
+    password: 'hej',
+    courses: ['JavaScript', 'Python'],
+  },
+  {
+    id: 4,
+    firstName: 'Wilhelm',
+    lastName: 'Lövgren Olofsson',
+    billingAddress: 'Jungfrugatan 30',
+    email: 'willelovgrenolofsson@gmail.com',
+    phoneNr: '0707818722',
+    password: 'hej',
+    courses: [],
+  },
+];
