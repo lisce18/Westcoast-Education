@@ -22,9 +22,9 @@ export const menuList = [
   },
   {
     id: 4,
-    text: 'Logga In',
+    text: 'Mina Sidor',
     class: 'menu',
-    href: '../Pages/log-in.html',
+    href: '../Pages/my-pages.html',
     type: 'aktuell',
   },
 ];

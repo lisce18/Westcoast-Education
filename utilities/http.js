@@ -73,3 +73,17 @@ export default class HttpClient {
     }
   }
 }
+
+export const getAllCourses = async () => {
+  try {
+    const response = await fetch(baseUrl + '/courses');
+
+    if (response.ok) {
+      return await response.json();
+    } else {
+      throw new Error(`${response.statue} ${response.statusText}`);
+    }
+  } catch (error) {
+    throw new Error(`Ett fel inträffade i get metoden: ${error}`);
+  }
+};
