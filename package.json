@@ -4,5 +4,16 @@
   },
   "scripts": {
     "dev": "tsc --watch"
-  }
+  },
+  "name": "westcoast-education",
+  "description": "## Steg 1.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
