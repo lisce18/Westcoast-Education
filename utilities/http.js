@@ -1,14 +1,11 @@
 export default class HttpClient {
-  // ett privat fält...
-  #url = '';
-
-  constructor(url) {
-    this.#url = url;
+  constructor(baseUrl) {
+    this.baseUrl = baseUrl;
   }
 
   async get() {
     try {
-      const response = await fetch(this.#url);
+      const response = await fetch(this.baseUrl);
 
       if (response.ok) {
         const result = await response.json();
@@ -21,43 +18,38 @@ export default class HttpClient {
     }
   }
 
-  async add(data) {
-    try {
-      const response = await fetch(this.#url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+  async add(path, data) {
+    const response = await fetch(this.baseUrl + path, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-      if (response.ok) {
-        const result = await response.json();
-        return result;
-      } else {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-    } catch (error) {
-      throw new Error(`Ett fel inträffade i add metoden: ${error}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return await response.json();
+  }
+
+  async delete(id) {
+    const response = await fetch(`${this.baseUrl}/${id}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
   }
 
-  async delete() {
+  async update(id, data) {
     try {
-      const response = await fetch(this.#url, {
-        method: 'DELETE',
-      });
-    } catch (error) {
-      throw new Error(`Ett fel inträffade i delete metoden: ${error}`);
-    }
-  }
-
-  async update(data) {
-    try {
-      const response = await fetch(this.#url, {
-        method: 'PUT',
+      const response = await fetch(`${this.baseUrl}/${id}`, {
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
@@ -72,18 +64,18 @@ export default class HttpClient {
       throw new Error(`Ett fel inträffade i update metoden: ${error}`);
     }
   }
-}
 
-export const getAllCourses = async () => {
-  try {
-    const response = await fetch(baseUrl + '/courses');
+  async getAllCourses() {
+    try {
+      const response = await fetch(this.baseUrl + "/courses");
 
-    if (response.ok) {
-      return await response.json();
-    } else {
-      throw new Error(`${response.statue} ${response.statusText}`);
+      if (response.ok) {
+        return await response.json();
+      } else {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+    } catch (error) {
+      throw new Error(`Ett fel inträffade i get metoden: ${error}`);
     }
-  } catch (error) {
-    throw new Error(`Ett fel inträffade i get metoden: ${error}`);
   }
-};
+}

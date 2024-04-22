@@ -4,11 +4,15 @@
       "id": 1,
       "courseName": "Python",
       "number": 2553,
-      "duration": 30,
-      "location": "Online",
+      "duration": 35,
+      "location": "Online/På plats",
       "imageUrl": "python.jpg",
-      "startDate": "28/2-24",
-      "costumers": ["Johannes Andreasson", "Anders Johansson"]
+      "startDate": "25/5-24",
+      "price": 5900,
+      "customers": [
+        "johan.andersson@hotmail.com",
+        "anders.johansson@hotmail.com"
+      ]
     },
     {
       "id": 2,
@@ -18,30 +22,28 @@
       "location": "Online/På plats",
       "imageUrl": "javascript.jpg",
       "startDate": "28/2-24",
-      "costumers": ["Johan Andersson", "Anders Johansson"]
+      "price": 6000,
+      "customers": [
+        "johan.andersson@hotmail.com",
+        "anders.johansson@hotmail.com"
+      ]
     },
     {
       "id": 3,
       "courseName": "React",
       "number": 2716,
-      "duration": 60,
+      "duration": 55,
       "location": "På plats",
       "imageUrl": "react.jpg",
-      "startDate": "28/2-24",
-      "costumers": ["Johan Andersson", "Johannes Andreasson"]
-    },
-    {
-      "id": 4,
-      "courseName": "NodeJs",
-      "number": 3571,
-      "duration": 38,
-      "location": "Online",
-      "imageUrl": "nodejs.jpg",
-      "startDate": "28/2-24",
-      "costumers": []
+      "startDate": "28/2-25",
+      "price": 7500,
+      "customers": [
+        "johan.andersson@hotmail.com",
+        "johannes.andreasson@hotmail.com"
+      ]
     }
   ],
-  "costumers": [
+  "customers": [
     {
       "id": 1,
       "fullName": "Johan Andersson",
@@ -57,8 +59,8 @@
       "billingAddress": "Andreassonsgata 31",
       "email": "johannes.andreasson@hotmail.com",
       "phoneNr": "0702312112",
-      "password": "heja",
-      "courses": ["Pyhton", "React"]
+      "password": "hej",
+      "courses": ["Python", "React"]
     },
     {
       "id": 3,
@@ -66,17 +68,8 @@
       "billingAddress": "Johanssonsgata 32",
       "email": "anders.johansson@hotmail.com",
       "phoneNr": "0703212112",
-      "password": "hejar",
+      "password": "hej",
       "courses": ["JavaScript", "Python"]
-    },
-    {
-      "id": 4,
-      "fullName": "Wilhelm Lövgren Olofsson",
-      "billingAddress": "Jungfrugatan 30",
-      "email": "willelovgrenolofsson@gmail.com",
-      "phoneNr": "0707818722",
-      "password": "hejade",
-      "courses": []
     }
   ]
 }

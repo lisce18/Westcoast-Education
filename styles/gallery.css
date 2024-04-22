@@ -1,0 +1,28 @@
+.course-image img {
+  cursor: pointer;
+}
+
+#course-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.course-image {
+  display: flex;
+  grid-gap: 1rem;
+  margin: 1rem;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.course-image img {
+  width: 15dvw;
+  height: 20dvh;
+  object-fit: contain;
+}
+
+.course-image div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

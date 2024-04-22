@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  background-color: #010101;
+  min-height: 10dvh;
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 1;
+}
+
+header nav {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+#menu {
+  display: flex;
+  height: 100%;
+  width: 80dvw;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#menu li {
+  list-style: none;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+main {
+  padding-bottom: 2rem;
+  width: 80dvw;
+  height: 100%;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer {
+  background-color: #010101;
+  height: 10dvh;
+  width: 100dvw;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+}
+
+.copy-footer {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-footer span {
+  font-size: 1.5rem;
+  width: 30%;
+  text-align: center;
+  height: 50px;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25dvh;
+  width: 100%;
+}
+
+.home-page-title {
+  font-size: 2rem;
+}
+
+.popular-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25dvh;
+  width: 100%;
+  margin-top: 10dvh;
+}
+
+#course.container {
+  display: flex;
+  flex-direction: column;
+  height: 30dvh;
+}
+
+#popular {
+  height: 25dvh;
+  width: 100%;
+}
+
+#popular a {
+  text-decoration: none;
+  color: #000;
+}
+
+.course-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.course-image img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30dvh;
+  width: 100%;
+  margin-top: 5rem;
+}

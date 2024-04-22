@@ -1,0 +1,107 @@
+main {
+  height: 60dvh;
+  width: 100%;
+}
+
+#course-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+#course-details section {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#course-details section img {
+  width: 40dvw;
+  height: 40dvh;
+  object-fit: contain;
+}
+
+.course-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.course-info li {
+  font-size: 1.5rem;
+  margin: 3rem;
+  height: max-content;
+  width: 12rem;
+  text-decoration: 2px underline #000;
+  list-style: none;
+  cursor: default;
+}
+
+#enroll-container {
+  width: max-content;
+  margin-left: 2rem;
+}
+
+#register-btn {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pop-up-container {
+  transform: right;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  flex-direction: column;
+  height: 60dvh;
+  width: 40dvw;
+  align-self: center;
+  justify-self: center;
+}
+
+.design-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.enroll-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.enroll-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#enroll-btn,
+#cancel-btn {
+  font-size: 1.2rem;
+  width: 40%;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: #5a5a5a;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
